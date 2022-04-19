@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Escolher nome da pagina-->
+<title>Pagina Inicial</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+
+.segundoMenu{
+    position: fixed;
+}
+/*Barra de pequisa*/
+.search {
+  width: 85%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid gray;
+  border-right: none;
+  padding: 12px;
+  height: 10px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: red;
+}
+
+
+.searchButton {
+  width: 40px;
+  height: 28px;
+  border: 2px solid gray;
+  background: red;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 17px;
+}
+/* /Barra de pequisa*/
+
+/* Botao de adicionar ao carinho*/
+.carrinhoButton {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  background: red;
+  text-align: center;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+/* /Botao de adicionar ao carinho*/
+
+/* Segundo menu */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: red;
+  color: white;
+}
+
+
+/* /Segundo menu */
+</style>
+
+</head>
+<body>
+
+
+<!-- Barra do menu -->
+<div class="w3-top" style="background-color: white">
+
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+   
+    <div class="material-icons w3-right w3-padding-16" style="font-size:28px;color:red">shopping_cart</div>
+    <div class="w3-right w3-padding-16">&nbsp &nbsp &nbsp</div>
+    <div class="w3-right w3-padding-16">Login/Registo</div>
+    <div class="w3-left w3-padding-16">Nome da aplicação</div>
+    <div class="w3-left w3-padding-16">&nbsp &nbsp</div>
+
+    <div class="w3-left w3-padding-16">
+        <div class="search">
+           <input type="text" style="font-size:20px" class="searchTerm" placeholder="O que procura?">
+           <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+        </div>
+     </div>
+
+  </div>
+ <!--Segundo menu-->
+  <div class="w3-content w3-padding" style="max-width:1200px;margin-top:50px">
+    <hr style="height:1.5px;border-width:0;color:lightgrey;background-color:lightgrey">
+
+    <div class="topnav">
+        <a href="#Produtos">Produtos</a>
+        <a href="#Campanhas">Campanhas</a>
+        <a href="#Lista de fornecdores">Fornecdores</a>
+        <a href="#sobre">Sobre</a>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- /Barra do menu -->
+
+
+
+
+
+
+
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+         
+
+
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="agua.png" alt="Sandwich" style="width:100%">
+      <h3>Garrafa 1L transparente e amareala</h3>
+      <p>AfonsoGama Lda.</p>
+      <p>1 unidade</p>
+      <p>€17,00/un </p>
+      <button type="submit" class="carrinhoButton">Carrinho</button>
+    </div>
+    <div class="w3-quarter">
+      <img src="agua.png" alt="" style="width:100%">
+      <h3>Garrafa 1L transparente e amareala</h3>
+      <p>AfonsoGama Lda.</p>
+      <p>1 unidade</p>
+      <p>€17,00/un </p>
+      <button type="submit" class="carrinhoButton">Carrinho</button>
+    </div>
+    <div class="w3-quarter">
+      <img src="agua.png" alt="" style="width:100%">
+      <h3>Garrafa 1L transparente e amareala</h3>
+      <p>AfonsoGama Lda.</p>
+      <p>1 unidade</p>
+      <p>€17,00/un </p>
+      <button type="submit" class="carrinhoButton">Carrinho</button>
+    </div>
+    <div class="w3-quarter">
+      <img src="agua.png" alt="" style="width:100%">
+      <h3>Garrafa 1L transparente e amareala</h3>
+      <p>AfonsoGama Lda.</p>
+      <p>1 unidade</p>
+      <p>€17,00/un </p>
+      <button type="submit" class="carrinhoButton">Carrinho</button>
+    </div>
+  </div>
+  
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+ 
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Metodos de pagamento</h3>
+      <i class="fa fa-cc-paypal" style="font-size:36px"></i>
+      <i class="fa fa-cc-mastercard" style="font-size:36px"></i>
+      <i class="fa fa-cc-visa" style="font-size:36px"></i>
+   
+    </div>
+  
+    <div class="w3-third">
+      <h3>Contactos</h3>
+      <p>Tel: 210 000 000 (Chamada para a rede fixa nacional)</p>
+      <p>Email: nomedaaplicacao@gmail.com</p>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Ajuda</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Politica de serviços</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Politica de privacidade</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mapa do site</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mais</span> 
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+
+
+
+</body>
+</html>
