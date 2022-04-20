@@ -1,0 +1,171 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+
+.segundoMenu{
+    position: fixed;
+}
+
+/*Barra de pequisa*/
+
+.search {
+  width: 85%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid gray;
+  border-right: none;
+  padding: 12px;
+  height: 10px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: red;
+}
+
+
+.searchButton {
+  width: 40px;
+  height: 28px;
+  border: 2px solid gray;
+  background: red;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 17px;
+}
+/* /Barra de pequisa*/
+
+
+
+/* Botao de adicionar ao carinho*/
+
+.carrinhoButton {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  background: red;
+  text-align: center;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* /Botao de adicionar ao carinho*/
+
+
+
+/* Segundo menu */
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* /Segundo menu */
+
+
+
+/* Botao login/registar */
+
+.button {
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  
+  }
+  
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+  
+  .button3:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+
+  /* The popup form - hidden by default */
+    .form-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+        text-align: center;
+    }
+
+    /* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 50%;
+    padding: 9px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    font-size: 18px;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+/* /Botao login/registar */
