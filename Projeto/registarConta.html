@@ -1,0 +1,303 @@
+<!--Perfil/EditarConta-->
+<!DOCTYPE html>
+<html>
+<head>
+<!--Escolher nome da pagina-->
+<title>Registar conta </title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="home.css">
+<!----======== CSS ======== -->
+<link rel="stylesheet" href="style.css">
+     
+<!----===== Iconscout CSS ===== -->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+<style>
+  body { background-image: "vegetables.jpg";}
+</style>
+<body>
+<!-- Barra do menu -->
+<div class="w3-top" style="background-color: white">
+
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+     
+      <div class="material-icons w3-right w3-padding-16" style="font-size:28px;color:red">shopping_cart</div>
+  
+      <div class="w3-right w3-padding-16">&nbsp &nbsp &nbsp</div>
+  
+      <div class="w3-right w3-padding-16"> <button class="button button3" onclick="openForm()"> Login</button>
+  
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <label for="email"><b></b></label>
+            <input type="text" placeholder="* Email" name="email" required>
+            <label for="psw"><b></b></label>
+            <input type="password" placeholder="* Palavra-passe" name="psw" required>
+            <button type="submit" class="btn">Entrar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+            <a href="">Login Google</a>
+          </form>
+        </div>
+      </div>
+  
+      <div class="w3-left w3-padding-16">Nome da aplicação</div>
+      <div class="w3-left w3-padding-16">&nbsp &nbsp</div>
+      <div class="w3-left w3-padding-16">
+          <div class="search">
+             <input type="text" style="font-size:20px" class="searchTerm" placeholder="O que procura?">
+             <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+          </div>
+      </div>
+  
+  </div>
+  
+
+  <div class="w3-content w3-padding" style="max-width:1200px;margin-top:50px">
+    <hr style="height:1.5px;border-width:0;color:lightgrey;background-color:lightgrey">
+  </div>
+   
+  </div>
+  <!-- /Barra do menu -->
+
+
+  <!--Pagina Principal-->
+  <center>
+  <div class="w3-main w3-content w3-padding"  style="background-image: url('vegetables.jpg');background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;height: 100%;max-width:1200px;margin-top:100px"> 
+    <div class="container" >
+      <h1>Registo</h1>
+
+      <label class="">Consumidor
+        <input onclick="showCnt(0)" type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      &nbsp
+      <label class="">Transportadores
+        <input onclick="showCnt(1)" type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      &nbsp
+      <label class="">Fornecedor
+        <input onclick="showCnt(2)" type="radio" name="radio">
+        <span  class="checkmark"></span>
+      </label>
+      <hr style="height:1.5px;border-width:0;color:lightgrey;background-color:lightgrey">
+      <form action="#">
+          <div class="form first" id="consumidor">
+              <div class="details personal">
+                  <span class="title" style="text-align: left;"><b>Dados Pessoais</b></span>
+                  <br>
+                  <div class="fields">
+                      <div class="input-field">
+                          
+                          <input type="text" placeholder="* Nome" required>
+                      </div>
+
+                      <div class="input-field">
+                          
+                          <input type="date" placeholder="24/08/2001" required>
+                      </div>
+
+                      <div class="input-field">
+                          
+                          <input type="text" placeholder="* Email" required>
+                      </div>
+
+                      <div class="input-field">
+                          
+                          <input type="number" placeholder="* Telefone" required>
+                      </div>
+
+                    <div class="input-field">
+                        
+                        <input type="number" placeholder="NIF">
+                    </div>
+
+                    <div class="input-field">
+                      
+                      <input type="password" placeholder="* Palavra-passe" name="psw" required>
+                  </div>
+                    
+
+                    <div class="input-field">
+                        
+                        <input type="zip" placeholder="1500-000">
+                    </div>
+                  </div>
+              </div>
+
+               
+          </div>
+
+          <div class="form first" style="display:none;" id="transportador">
+            <div class="details personal">
+              <span class="title" style="text-align: left;"><b>Dados Transportador</b></span>
+              <br>
+              <div class="fields">
+                  <div class="input-field">
+                      
+                      <input type="text" placeholder="* Nome" required>
+                  </div>
+
+                  <div class="input-field">
+                      
+                    <input type="text" placeholder="* Nome empresa" required>
+                </div>
+
+                  <div class="input-field">
+                      
+                      <input type="date" placeholder="24/08/2001" required>
+                  </div>
+
+                  <div class="input-field">
+                      
+                      <input type="text" placeholder="* Email" required>
+                  </div>
+
+                  <div class="input-field">
+                      
+                      <input type="number" placeholder="* Telefone" required>
+                  </div>
+
+                <div class="input-field">
+                    
+                    <input type="number" placeholder="NIF">
+                </div>
+
+                <div class="input-field">
+                  
+                  <input type="password" placeholder="* Palavra-passe" name="psw" required>
+              </div>
+              
+              </div>
+          </div>
+
+          </div>
+
+          <div class="form first" style="display:none;" id="fornecedor">
+            <div class="details personal">
+              <span class="title" style="text-align: left;"><b>Dados Fornecedor</b></span>
+              <br>
+              <div class="fields">
+
+                  <div class="input-field">
+                      
+                    <input type="text" placeholder="* Nome empresa" required>
+                </div>
+
+                  <div class="input-field">
+                      
+                      <input type="date" placeholder="24/08/2001" required>
+                  </div>
+
+                  <div class="input-field">
+                      
+                      <input type="text" placeholder="* Email" required>
+                  </div>
+
+                  <div class="input-field">
+                      
+                      <input type="number" placeholder="* Contacto  empresa" required>
+                  </div>
+
+                  <div class="input-field">
+                      
+                    <input type="text" placeholder="* Morada empresa" required>
+                </div>
+
+                <div class="input-field">
+                  
+                  <input type="password" placeholder="* Palavra-passe" name="psw" required>
+              </div>
+                
+
+                <div class="input-field">
+                    
+                    <input type="zip" placeholder="1500-000">
+                </div>
+              </div>
+          </div>
+
+          </div>
+
+      </form>
+      <div class="details ID">
+        <button onclick="" class="backBtn">
+            Concluir registo
+            <i class="uil uil-navigator"></i>
+        </button>
+    </div>
+  </div>       
+  </div>
+  </center>
+
+  <!--/Pagina Princial-->
+
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Metodos de pagamento</h3>
+      <i class="fa fa-cc-paypal" style="font-size:36px"></i>
+      <i class="fa fa-cc-mastercard" style="font-size:36px"></i>
+      <i class="fa fa-cc-visa" style="font-size:36px"></i>
+   
+    </div>
+  
+    <div class="w3-third">
+      <h3>Contactos</h3>
+      <p>Tel: 210 000 000 (Chamada para a rede fixa nacional)</p>
+      <p>Email: nomedaaplicacao@gmail.com</p>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Ajuda</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Politica de serviços</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Politica de privacidade</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mapa do site</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mais</span> 
+      </p>
+    </div>
+  </footer>
+<!--/Footer-->
+
+<!--Script-->
+  <script>
+
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    
+  }
+
+  function showCnt(index) {
+      var pages_list = [];
+
+      pages_list.push(
+          document.getElementById("consumidor"),
+          document.getElementById("transportador"),
+          document.getElementById("fornecedor"),
+      );
+
+      pages_list[index].style.display = "flex";
+
+      pages_list.splice(index, 1);
+      pages_list.forEach(element => element.style.display = "none");
+  }
+</script>
+<!--/Script-->
+
+</body>
+</html>
